@@ -1,0 +1,409 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>ShineFleet | Commercial Vehicle Washing Services</title>  
+  
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">  
+  
+<style>  
+:root{  
+--primary:#0A84FF;  
+--dark:#0f172a;  
+--light:#f8fafc;  
+--accent:#00C2FF;  
+}  
+  
+*{  
+margin:0;  
+padding:0;  
+box-sizing:border-box;  
+font-family:'Poppins',sans-serif;  
+}  
+  
+body{  
+background:#fff;  
+color:#333;  
+line-height:1.6;  
+}  
+  
+nav{  
+position:fixed;  
+width:100%;  
+top:0;  
+background:white;  
+padding:15px 8%;  
+display:flex;  
+justify-content:space-between;  
+align-items:center;  
+box-shadow:0 2px 10px rgba(0,0,0,.08);  
+z-index:1000;  
+}  
+  
+.logo{  
+font-size:1.5rem;  
+font-weight:700;  
+color:var(--primary);  
+}  
+  
+nav ul{  
+display:flex;  
+list-style:none;  
+gap:25px;  
+}  
+  
+nav a{  
+text-decoration:none;  
+color:#333;  
+font-weight:500;  
+}  
+  
+.btn{  
+background:var(--primary);  
+color:white;  
+padding:12px 25px;  
+border-radius:30px;  
+text-decoration:none;  
+display:inline-block;  
+transition:.3s;  
+}  
+  
+.btn:hover{  
+background:#0066d6;  
+transform:translateY(-2px);  
+}  
+  
+.hero{  
+height:100vh;  
+background:  
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),  
+url('https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=1600&q=80');  
+background-size:cover;  
+background-position:center;  
+display:flex;  
+align-items:center;  
+justify-content:center;  
+text-align:center;  
+color:white;  
+padding:20px;  
+}  
+  
+.hero h1{  
+font-size:4rem;  
+margin-bottom:20px;  
+}  
+  
+.hero p{  
+font-size:1.3rem;  
+max-width:700px;  
+margin:auto auto 30px;  
+}  
+  
+section{  
+padding:90px 10%;  
+}  
+  
+.section-title{  
+text-align:center;  
+margin-bottom:50px;  
+}  
+  
+.section-title h2{  
+font-size:2.5rem;  
+color:var(--dark);  
+}  
+  
+.cards{  
+display:grid;  
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));  
+gap:25px;  
+}  
+  
+.card{  
+background:white;  
+padding:30px;  
+border-radius:15px;  
+box-shadow:0 10px 25px rgba(0,0,0,.08);  
+transition:.3s;  
+}  
+  
+.card:hover{  
+transform:translateY(-8px);  
+}  
+  
+.card h3{  
+margin-bottom:10px;  
+color:var(--primary);  
+}  
+  
+.benefits{  
+background:var(--light);  
+}  
+  
+.stats{  
+display:grid;  
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));  
+gap:20px;  
+text-align:center;  
+}  
+  
+.stat{  
+background:white;  
+padding:30px;  
+border-radius:15px;  
+box-shadow:0 5px 20px rgba(0,0,0,.08);  
+}  
+  
+.stat h3{  
+font-size:2rem;  
+color:var(--primary);  
+}  
+  
+.pricing{  
+display:grid;  
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));  
+gap:25px;  
+}  
+  
+.price-card{  
+border:2px solid #e5e7eb;  
+padding:35px;  
+border-radius:15px;  
+text-align:center;  
+}  
+  
+.price-card.featured{  
+border-color:var(--primary);  
+transform:scale(1.03);  
+}  
+  
+.price{  
+font-size:2.5rem;  
+font-weight:700;  
+margin:15px 0;  
+color:var(--primary);  
+}  
+  
+.testimonials{  
+background:var(--light);  
+}  
+  
+.testimonial{  
+background:white;  
+padding:25px;  
+border-radius:15px;  
+box-shadow:0 5px 15px rgba(0,0,0,.08);  
+}  
+  
+.contact{  
+background:var(--dark);  
+color:white;  
+}  
+  
+form{  
+max-width:700px;  
+margin:auto;  
+display:grid;  
+gap:15px;  
+}  
+  
+input, textarea{  
+padding:15px;  
+border:none;  
+border-radius:8px;  
+}  
+  
+button{  
+padding:15px;  
+border:none;  
+border-radius:8px;  
+background:var(--primary);  
+color:white;  
+font-size:1rem;  
+cursor:pointer;  
+}  
+  
+footer{  
+background:#020617;  
+color:#94a3b8;  
+padding:25px;  
+text-align:center;  
+}  
+</style>  
+</head>  
+<body>  
+  
+<nav>  
+<div class="logo">ShineFleet</div>  
+  
+<ul>  
+<li><a href="#services">Services</a></li>  
+<li><a href="#pricing">Pricing</a></li>  
+<li><a href="#contact">Contact</a></li>  
+</ul>  
+</nav>  
+  
+<section class="hero">  
+<div>  
+<h1>Commercial Vehicle Washing That Makes Your Business Shine</h1>  
+  
+<p>  
+Reliable mobile vehicle cleaning for fleets, dealerships,  
+corporate offices, taxi companies, delivery firms, and more.  
+</p>  
+  
+<a href="https://your-booking-link.com" class="btn">  
+Schedule a Free Consultation  
+</a>  
+</div>  
+</section>  
+  
+<section id="services">  
+<div class="section-title">  
+<h2>Our Services</h2>  
+</div>  
+  
+<div class="cards">  
+<div class="card">  
+<h3>Fleet Washing</h3>  
+<p>Regular cleaning for company cars, vans, and commercial vehicles.</p>  
+</div>  
+  
+<div class="card">  
+<h3>Mobile On-Site Service</h3>  
+<p>We come directly to your business location.</p>  
+</div>  
+  
+<div class="card">  
+<h3>Premium Detailing</h3>  
+<p>Interior and exterior detailing for executive vehicles.</p>  
+</div>  
+  
+<div class="card">  
+<h3>Dealership Support</h3>  
+<p>Vehicle preparation and presentation services.</p>  
+</div>  
+</div>  
+</section>  
+  
+<section class="benefits">  
+<div class="section-title">  
+<h2>Why Choose ShineFleet?</h2>  
+</div>  
+  
+<div class="stats">  
+<div class="stat">  
+<h3>500+</h3>  
+<p>Vehicles Cleaned Monthly</p>  
+</div>  
+  
+<div class="stat">  
+<h3>98%</h3>  
+<p>Client Retention Rate</p>  
+</div>  
+  
+<div class="stat">  
+<h3>24h</h3>  
+<p>Fast Response Time</p>  
+</div>  
+  
+<div class="stat">  
+<h3>Eco</h3>  
+<p>Environmentally Friendly Products</p>  
+</div>  
+</div>  
+</section>  
+  
+<section id="pricing">  
+<div class="section-title">  
+<h2>Business Packages</h2>  
+</div>  
+  
+<div class="pricing">  
+  
+<div class="price-card">  
+<h3>Starter</h3>  
+<div class="price">£99</div>  
+<p>Per Week</p>  
+<br>  
+<p>Up to 10 vehicles</p>  
+<p>Exterior wash</p>  
+<p>Monthly reporting</p>  
+</div>  
+  
+<div class="price-card featured">  
+<h3>Professional</h3>  
+<div class="price">£249</div>  
+<p>Per Week</p>  
+<br>  
+<p>Up to 30 vehicles</p>  
+<p>Interior & exterior cleaning</p>  
+<p>Priority scheduling</p>  
+</div>  
+  
+<div class="price-card">  
+<h3>Enterprise</h3>  
+<div class="price">Custom</div>  
+<p>For large fleets</p>  
+<br>  
+<p>Dedicated account manager</p>  
+<p>Multiple locations</p>  
+<p>Custom contracts</p>  
+</div>  
+  
+</div>  
+</section>  
+  
+<section class="testimonials">  
+<div class="section-title">  
+<h2>Client Testimonials</h2>  
+</div>  
+  
+<div class="cards">  
+<div class="testimonial">  
+<p>  
+"Excellent service and very reliable.  
+Our fleet always looks professional."  
+</p>  
+<strong>- Operations Manager</strong>  
+</div>  
+  
+<div class="testimonial">  
+<p>  
+"Saved us time and improved our company image."  
+</p>  
+<strong>- Transport Company Director</strong>  
+</div>  
+  
+<div class="testimonial">  
+<p>  
+"Professional staff and outstanding results."  
+</p>  
+<strong>- Vehicle Dealership Manager</strong>  
+</div>  
+</div>  
+</section>  
+  
+<section id="contact" class="contact">  
+<div class="section-title">  
+<h2 style="color:white;">Get a Free Quote</h2>  
+</div>  
+  
+<form action="#" method="POST">  
+<input type="text" placeholder="Company Name" required>  
+<input type="text" placeholder="Contact Name" required>  
+<input type="email" placeholder="Email Address" required>  
+<input type="tel" placeholder="Phone Number">  
+<textarea rows="6" placeholder="Tell us about your fleet"></textarea>  
+  
+<button type="submit">Request Quote</button>  
+</form>  
+</section>  
+  
+<footer>  
+© 2026 ShineFleet Commercial Vehicle Washing Services  
+</footer>  
+  
+</body>  
+</html>  
